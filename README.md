@@ -119,7 +119,7 @@ It needs Node.js 18 or newer and Playwright, installed once with `npm install -g
 
 ## Contact form
 
-The form on `contact.html` is sent by [FormSubmit](https://formsubmit.co), a free service that emails each message on. It is the only outside service the site talks to.
+The form on `contact.html` is sent by [the site-forms Worker (Resend)](https://formsubmit.co), a free service that emails each message on. It is the only outside service the site talks to.
 
 **The receiving email address is set in one place: the `<form id="contact-form">` tag in `contact.html`.** It appears twice on that one tag; change both:
 
@@ -129,11 +129,11 @@ The form on `contact.html` is sent by [FormSubmit](https://formsubmit.co), a fre
       action="https://formsubmit.co/janderson@cypher-llc.com" method="POST">
 ```
 
-`data-email` is used when JavaScript is on (the message is sent in the background and a thank-you message replaces the form; a plain error message shows if it fails). `action` is used if JavaScript is off (a normal form post; FormSubmit then returns the visitor to `contact.html?sent=1`, which shows the thank-you message).
+`data-email` is used when JavaScript is on (the message is sent in the background and a thank-you message replaces the form; a plain error message shows if it fails). `action` is used if JavaScript is off (a normal form post; the site-forms Worker (Resend) then returns the visitor to `contact.html?sent=1`, which shows the thank-you message).
 
-**One-time activation:** the first time anyone sends the form, FormSubmit emails the receiving address asking to confirm it. Click the link in that email once, and messages are delivered from then on. (Send a test message yourself right after publishing.) After activating, FormSubmit also offers a random alias for the address; you can put that alias in place of the address in both spots to keep the address out of the page source.
+**One-time activation:** the first time anyone sends the form, the site-forms Worker (Resend) emails the receiving address asking to confirm it. Click the link in that email once, and messages are delivered from then on. (Send a test message yourself right after publishing.) After activating, the site-forms Worker (Resend) also offers a random alias for the address; you can put that alias in place of the address in both spots to keep the address out of the page source.
 
-Other settings are hidden fields inside the form: `_subject` (the email subject line), `_honey` (a hidden trap field that stops most spam bots), `_template` (table layout for the email) and `_next` (where no-JavaScript visitors land after sending). FormSubmit's own captcha is left on for non-JavaScript submissions.
+Other settings are hidden fields inside the form: `_subject` (the email subject line), `_honey` (a hidden trap field that stops most spam bots), `_template` (table layout for the email) and `_next` (where no-JavaScript visitors land after sending). the site-forms Worker (Resend)'s own captcha is left on for non-JavaScript submissions.
 
 ## Publishing on GitHub Pages
 
