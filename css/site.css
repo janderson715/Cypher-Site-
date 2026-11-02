@@ -1021,3 +1021,10 @@ figure { margin: 0; }
 #cosmo .btn-primary { background: #1b78c2; border-color: #1b78c2; color: #fff; }
 #cosmo .btn-primary:hover { background: #155f9b; border-color: #155f9b; color: #fff; }
 #cosmo .gcap .no, #cosmo-capabilities .gcap .gcap-tag { color: var(--pa-2); }
+
+/* Goal quote: text left-aligned, quote marks sit right against the first and last words */
+.quote { text-align: left; }
+.quote p { margin: 0; }
+.quote .qm { color: var(--green-bright); font: 700 2.7em/0 Georgia, "Times New Roman", serif; vertical-align: -0.3em; }
+.quote .qm-open { margin-right: .12em; }
+.quote .qm-close { margin-left: .08em; }
