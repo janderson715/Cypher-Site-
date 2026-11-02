@@ -47,13 +47,7 @@ window.CYPHER_STATEMENT = {
     title: "Cypher in focus",
     tagline: "Secure, innovative, adaptive, mission critical IT solutions",
     photo: "assets/img/photos/network-constellation.jpg",
-    badge: "Technical staff supporting customers onsite",
-    // Three key figures under "Why Cypher": big text, then the small label.
-    figures: [
-      { big: "2009", small: "Founded" },
-      { big: "6", small: "Service areas" },
-      { big: "SDVOSB", small: "Service-disabled veteran-owned" }
-    ]
+    badge: "Technical staff supporting customers onsite"
   },
 
   // Summary paragraphs (one entry per paragraph)
