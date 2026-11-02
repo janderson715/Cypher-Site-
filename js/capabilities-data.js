@@ -90,7 +90,7 @@ window.CYPHER_STATEMENT = {
     { lead: "100% cleared technical staff,", text: "supporting customers onsite." },
     { lead: "Service-Disabled Veteran-Owned Small Business", text: "(SDVOSB), founded in 2009." },
     { lead: "Prime contractor", text: "on FAA eFAST and SeaPort NxG." },
-    { lead: "ISO 9001", text: "certified through DEKRA, and CMMC certified." },
+    { lead: "ISO 9001", text: "certified through DEKRA. CMMC compliant company." },
     { lead: "Our own software,", text: "two separate products: C.O.S.M.O (threat intelligence) and G.H.O.S.T. (on-premises AI)." }
   ],
 
@@ -221,7 +221,7 @@ window.CYPHER_STATEMENT = {
   certifications: [
     { name: "ISO 9001 (DEKRA)", badge: "assets/img/badges/dekra-iso-9001.png" },
     { name: "SDVOSB (CVE)", badge: "assets/img/badges/sdvosb-cve.png" },
-    { name: "CMMC", badge: "assets/img/badges/cmmc.png" }
+    { name: "CMMC compliant company", badge: "" }
   ],
 
   // Partners (dark sidebar, page 6). "logo" is a picture in assets/img/;
