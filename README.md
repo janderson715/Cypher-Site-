@@ -7,7 +7,7 @@ The Cypher, LLC website and capabilities statement. Plain static files: no build
 | File | What it is |
 | --- | --- |
 | `index.html` | Home page: slider, capabilities, customers, products, how to buy, leadership |
-| `services.html` | Capabilities: the six service areas in detail and the adaptive services |
+| `services.html` | Capabilities: the service areas in detail and the adaptive services |
 | `products.html` | C.O.S.M.O and G.H.O.S.T. (two separate products), with screenshots  |
 | `about.html` | Who we are, our goal, leadership, certifications, partners, customers |
 | `contact.html` | Contact form and direct contacts |
