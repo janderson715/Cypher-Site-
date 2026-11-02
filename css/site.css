@@ -965,3 +965,10 @@ figure { margin: 0; }
 .prt li:last-child:nth-child(odd) img { max-height: 0.5in; }
 .logo-band .marquee .logos img[src$="palantir.svg"] { max-width: 176px; max-height: 46px; }
 @media (max-width: 860px) { .logo-band .marquee .logos img[src$="palantir.svg"] { max-width: 138px; } }
+
+/* Home page "Who we are" key facts: open list, no lines or boxes */
+.glance { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s4); align-content: center; }
+.glance li { display: flex; align-items: center; gap: var(--s3); }
+.glance svg { width: 40px; height: 40px; flex: none; color: var(--green); stroke-width: 1.6; }
+.glance b { display: block; font-size: clamp(30px, 3.4vw, 42px); font-weight: 800; line-height: 1.05; color: var(--ink); letter-spacing: -0.01em; }
+.glance span { display: block; margin-top: 4px; font-size: 16px; color: var(--muted); }
