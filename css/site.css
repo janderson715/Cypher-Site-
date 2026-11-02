@@ -982,3 +982,8 @@ figure { margin: 0; }
 .gcaps.on-light .gcap .gcap-tag { color: var(--green); }
 .gcaps.on-light .gcap p:last-child { color: var(--body); }
 .gcaps.on-light .gcap .no { color: var(--green); }
+
+/* C.O.S.M.O capability text: dark, readable on the light section */
+#cosmo-capabilities .gcap p:last-child { color: #262b30; font-size: 17px; line-height: 1.55; }
+#cosmo-capabilities .gcap .gcap-tag { color: #1b6b20; }
+#cosmo-capabilities .gcaps-head .lead { color: #30363b; }
