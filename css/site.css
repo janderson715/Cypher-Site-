@@ -961,10 +961,19 @@ figure { margin: 0; }
 .logo-band .marquee .logos img[src$="palantir.svg"] { max-width: 176px; max-height: 46px; }
 @media (max-width: 860px) { .logo-band .marquee .logos img[src$="palantir.svg"] { max-width: 138px; } }
 
-/* Home page "Who we are" key facts: big open figures, no lines or boxes */
-.glance { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s8) var(--s5); align-content: center; }
-.glance span { display: block; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
-.glance b { display: block; font-size: clamp(36px, 4.4vw, 60px); font-weight: 800; line-height: 1.02; color: var(--ink); letter-spacing: -0.02em; }
+/* Home page "Who we are": icon facts and a small industry row (no boxes or lines) */
+.who-facts { display: grid; gap: var(--s5); align-content: center; }
+.wf-list, .wf-sectors { list-style: none; margin: 0; padding: 0; }
+.wf-list { display: grid; gap: var(--s3); }
+.wf-list li { display: flex; align-items: center; gap: var(--s2); }
+.wf-list svg { width: 32px; height: 32px; flex: none; color: var(--green); }
+.wf-list span { display: block; font-size: 12.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.wf-list b { display: block; margin-top: 2px; font-size: 20px; font-weight: 700; line-height: 1.25; color: var(--ink); }
+.wf-h { margin: 0; font-size: 12.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); }
+.wf-sectors { display: flex; flex-wrap: wrap; gap: var(--s3) var(--s5); margin-top: calc(var(--s2) * -1); }
+.wf-sectors li { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 84px; text-align: center; }
+.wf-sectors svg { width: 30px; height: 30px; color: var(--green); }
+.wf-sectors span { font-size: 14px; font-weight: 600; color: var(--body); }
 
 /* Platform capabilities: open layout (no boxes), on both the dark G.H.O.S.T. and the light C.O.S.M.O sections */
 .gcap { padding: 0; background: none; border: 0; }
