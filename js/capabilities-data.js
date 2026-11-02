@@ -45,23 +45,25 @@ window.CYPHER_STATEMENT = {
     title: "Cypher in focus",
     tagline: "Secure, innovative, adaptive, mission critical IT solutions",
     photo: "assets/img/photos/network-constellation.jpg",
-    badge: "100% cleared technical staff supporting customers onsite",
+    badge: "Technical staff supporting customers onsite",
     // Three key figures under "Why Cypher": big text, then the small label.
     figures: [
       { big: "2009", small: "Founded" },
-      { big: "100%", small: "Cleared technical staff" },
+      { big: "6", small: "Service areas" },
       { big: "SDVOSB", small: "Service-disabled veteran-owned" }
     ]
   },
 
   // Summary paragraphs (one entry per paragraph)
   overview: [
-    "Cypher, LLC is a Service-Disabled Veteran-Owned Small Business, founded in 2009 and headquartered in Ashburn, Virginia. We are a service partner to the federal government. Our technical staff is 100% cleared and supports customers onsite, with decades of experience on enterprise programs for DoD, Intelligence Community and civilian customers.",
+    "Cypher, LLC is a Service-Disabled Veteran-Owned Small Business, founded in 2009. We are a service partner to the federal government. Our technical staff supports customers onsite, with decades of experience on enterprise programs for DoD, Intelligence Community and civilian customers.",
     "We provide key personnel in military intelligence, cyber security and operations, software engineering, DevOps, network and systems engineering, aviation safety, enterprise IT management, business process improvement, and agile coaching. We pair strategic planning with tactical execution and proven industry practice so that customer initiatives are delivered."
   ],
 
   // Core competencies (grey panel, page 2)
   competencies: [
+    { title: "Aviation Safety",
+      text: "Program management, engineering, analytics, software development, operations and maintenance, and training." },
     { title: "Cyber Operations",
       text: "Cyber planners, targeteers, operations engineers, intrusion and intelligence analysts, threat hunting, watch operations and network defense." },
     { title: "National Security and Intelligence",
@@ -71,9 +73,7 @@ window.CYPHER_STATEMENT = {
     { title: "Systems Engineering and Integration",
       text: "AWS cloud architecture and migration, SELinux system administration, and database architecture design." },
     { title: "Enterprise IT Management",
-      text: "Program planning, earned value management, risk mitigation, systems and network engineering, application security, and disaster recovery." },
-    { title: "Aviation Safety",
-      text: "Program management, engineering, analytics, software development, operations and maintenance, and training." }
+      text: "Program planning, earned value management, risk mitigation, systems and network engineering, application security, and disaster recovery." }
   ],
 
   // Highly adaptive services (dark photo panel, page 3)
@@ -87,12 +87,10 @@ window.CYPHER_STATEMENT = {
 
   // Why Cypher (numbered, page 2). "lead" prints in bold.
   differentiators: [
-    { lead: "100% cleared technical staff,", text: "supporting customers onsite." },
+    { lead: "Technical staff", text: "supporting customers onsite." },
     { lead: "Service-Disabled Veteran-Owned Small Business", text: "(SDVOSB), founded in 2009." },
     { lead: "Prime contractor", text: "on FAA eFAST and SeaPort NxG." },
-    { lead: "ISO 9001", text: "certified through DEKRA." },
-    { lead: "CMMC compliant", text: "company." },
-    { lead: "Our own software,", text: "two separate products: C.O.S.M.O (threat intelligence) and G.H.O.S.T. (on-premises AI)." }
+        { lead: "Our own software,", text: "two separate products: C.O.S.M.O (threat intelligence) and G.H.O.S.T. (on-premises AI)." }
   ],
 
   // Company data (cover, page 3, footers and contact). Empty "" hides a row.
@@ -104,22 +102,20 @@ window.CYPHER_STATEMENT = {
     businessSize: "Small business",
     socioEconomic: "SDVOSB",
     facilityClearance: "",
-    addressLine1: "44679 Endicott Dr, Suite 314",
-    addressLine2: "Ashburn, VA 20147",
+    addressLine1: "44679 Endicott Dr, Suite 336",
+    addressLine2: "",
     phone: "(571) 206-1401",
     website: "cypher-llc.com"
   },
 
   // NAICS codes (code + official NAICS title), page 3. Codes also print on the cover.
-  naics: [
-    { code: "541512", title: "Computer Systems Design Services" },
-    { code: "541611", title: "Administrative Management and General Management Consulting" },
-    { code: "541330", title: "Engineering Services" },
-    { code: "541511", title: "Custom Computer Programming Services" },
-    { code: "541618", title: "Other Management Consulting Services" },
-    { code: "541690", title: "Other Scientific and Technical Consulting Services" },
-    { code: "541990", title: "All Other Professional, Scientific, and Technical Services" }
-  ],
+  aviation: {
+    title: "Aviation Safety",
+    text: "Cypher supports aviation safety programs for the Federal Aviation Administration, the Air Force and the Navy. We manage programs, build the software behind aviation safety data, analyze it, run operations and maintenance, and train the people who use it.",
+    programsText: "For each program we provide program management, engineering, analytics, software development, operations and maintenance, and training.",
+    programs: ["Federal Aviation Administration (FAA)", "Air Force IRIS MFOQA", "Navy NAVAIR"],
+    items: ["Program management", "Engineering", "Analytics", "Software development", "Operations and maintenance", "Training"]
+  },
 
   // ---- Page 3: Our goal (in the photo band) --------------------------------
   goalPhoto: "assets/img/photos/green-data-streams.jpg",
@@ -128,11 +124,14 @@ window.CYPHER_STATEMENT = {
 
   // ---- Page 4: Offerings in detail ------------------------------------------
   offeringsTitle: "Cypher's offerings",
-  offeringsTagline: "Six service areas, staffed by cleared people",
+  offeringsTagline: "",
   offeringsPhoto: "assets/img/photos/server-corridor.jpg",
   // Each area gets a dark bar and a bullet list. "columns" is how many
   // columns the list uses (1, 2 or 3). "width" is "full" or "half".
   offerings: [
+    { area: "Aviation Safety", width: "half", columns: 1, items: [
+      "Program management", "Engineering", "Analytics", "Software development",
+      "Operations and maintenance", "Training" ] },
     { area: "Military Intelligence and Cyber Operations", width: "half", columns: 2, items: [
       "Cyber planners", "Cyber targeteers", "Cyber operations engineers", "Cyber intrusion analysts",
       "Cyber intelligence analysts", "Cyber threat hunting", "Cyber watch operations and CND",
@@ -159,10 +158,7 @@ window.CYPHER_STATEMENT = {
       "Open source and custom solutions in DoD architectures",
       "Enterprise architecture and data modeling that surface authoritative data sources" ] },
     { area: "Geospatial and Space", width: "half", columns: 1, items: [
-      "Mission systems and ground control support", "DevOps development", "Satellite support" ] },
-    { area: "Aviation Safety", width: "half", columns: 1, items: [
-      "Program management", "Engineering", "Analytics", "Software development",
-      "Operations and maintenance", "Training" ] }
+      "Mission systems and ground control support", "DevOps development", "Satellite support" ] }
   ],
 
   // ---- Page 5: Products -----------------------------------------------------
@@ -197,33 +193,11 @@ window.CYPHER_STATEMENT = {
   // ---- Page 6: Corporate capabilities ---------------------------------------
   corporatePhoto: "assets/img/photos/green-particle-field.jpg",
 
-  // Contract vehicles. "note" prints after the name in grey.
-  primeVehicles: [
-    { name: "FAA eFAST", note: "" },
-    { name: "SeaPort NxG", note: "" }
-  ],
-  subVehicles: [
-    { name: "USAF NETCENTS 2", note: "" },
-    { name: "SIT III", note: "Small business" },
-    { name: "DHS EAGLE II", note: "Small business" },
-    { name: "SIA III", note: "Large business" },
-    { name: "USCYBERCOM Omnibus", note: "Large business" },
-    { name: "VS2", note: "Large business" },
-    { name: "VECTOR", note: "Small business" },
-    { name: "RS3", note: "" },
-    { name: "OASIS Pools 1 and 3", note: "Small business" }
-  ],
-
   customers: [
+    "Federal Aviation Administration (FAA)", "Federal Transit Administration (FTA)",
     "USCYBERCOM J2 and J3", "USCENTCOM JIOC TAAS", "NIST Federal Labs Consortium",
     "Air Force IRIS MFOQA", "AWS GovCloud", "Northern Virginia agency", "FBI Cyber Center",
-    "Federal Aviation Administration", "Navy NAVAIR", "GEOINT and Aerospace"
-  ],
-
-  // Certifications: "badge" is a picture in assets/img/ ("" for none).
-  certifications: [
-    { name: "ISO 9001 (DEKRA)", badge: "assets/img/badges/dekra-iso-9001.png" },
-    { name: "SDVOSB (CVE)", badge: "assets/img/badges/sdvosb-cve.png" }
+    "Navy NAVAIR", "GEOINT and Aerospace"
   ],
 
   // Partners (dark sidebar, page 6). "logo" is a picture in assets/img/;
@@ -231,15 +205,15 @@ window.CYPHER_STATEMENT = {
   partners: [
     { name: "Carahsoft", logo: "assets/img/partners/carahsoft.png",
       note: "" },
-    { name: "SAIC", logo: "assets/img/partners/saic.png", note: "" },
-    { name: "Raytheon", logo: "assets/img/partners/raytheon.png", note: "" }
+        { name: "Raytheon", logo: "assets/img/partners/raytheon.png", note: "" },
+    { name: "Palantir" }, { name: "UTRS" }, { name: "GovSmart" }, { name: "Four Inc." }, { name: "Product Knowledge" }
   ],
 
   // Contacts (dark sidebar, page 6)
   contacts: [
-    { name: "Joseph Anderson", credentials: "MBA, MS, MISM, CSM", title: "President & CEO",
+    { name: "Joseph Anderson", credentials: "MBA, MS, MISM, CSM", title: "Founder & CEO",
       email: "janderson@cypher-llc.com", phone: "(571) 449-1368" },
-    { name: "Lisa Anderson", credentials: "J.D.", title: "Chief Operating Officer",
-      email: "landerson@cypher-llc.com", phone: "(571) 271-3471" }
+    { name: "Lisa Anderson", credentials: "", title: "Chief Operating Officer",
+      email: "landerson@cypher-llc.com", phone: "(571) 206-1401" }
   ]
 };

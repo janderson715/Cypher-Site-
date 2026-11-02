@@ -910,3 +910,19 @@ figure { margin: 0; }
 .bn p { margin: 0; color: var(--muted); line-height: 1.55; }
 .bn-note { margin-top: 28px; color: var(--muted); font-size: .95rem; }
 @media (max-width: 760px) { .bn { grid-template-columns: 1fr; } .bn li:nth-child(2) { border-top: 1px solid var(--line); } }
+
+/* Partners shown as names (no logo file yet) */
+.logos li.wm { font-size: 24px; font-weight: 700; color: #4a5157; letter-spacing: -0.01em; }
+/* Aviation Safety band on the home page */
+#aviation .svc-list { border-top-color: #e3e5e8; }
+#aviation .svc-list li { color: #1c2125; border-bottom-color: #e3e5e8; }
+#aviation .av-for { grid-column: 1 / -1; list-style: none; margin: 8px 0 0; padding: 28px 0 0; border-top: 1px solid #e3e5e8; display: flex; flex-wrap: wrap; gap: 12px 40px; }
+#aviation .av-for li { font-weight: 700; color: #4a5157; }
+
+/* Capabilities statement page 6: larger lists now that the vehicle blocks are gone */
+@media print, screen and (min-width: 880px) {
+  .p-corp .blk { margin-bottom: 26pt; }
+  .p-corp .blist li { font-size: 12pt; margin-bottom: 9pt; padding-left: 13pt; line-height: 1.35; }
+  .p-corp .blist li::before { top: 6.4pt; }
+  .p-corp .para { font-size: 11pt; line-height: 1.5; margin: 12pt 0 14pt; }
+}

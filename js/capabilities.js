@@ -50,7 +50,7 @@
 
   /* ---------------- Page 1: cover ---------------- */
   var cv = D.cover || {};
-  var codes = (D.naics || []).map(function (n) { return esc(n.code); }).join(", ");
+  function addr(sep) { return [C.addressLine1, C.addressLine2].filter(Boolean).map(t).join(sep); }
   var p1 =
     '<article class="sheet cover" aria-label="Page 1, cover">' +
       '<div class="cv-photo"' + bg(cv.photo) + "></div><div class=\"cv-shade\"></div>" +
@@ -62,10 +62,9 @@
         "<h1><span>" + t(cv.titleLine1) + "</span><span>" + t(cv.titleLine2) + "</span></h1>" +
         (cv.leadLine ? '<p class="cv-lead">' + t(cv.leadLine) + "</p>" : "") + "</div>" +
       '<ul class="cv-contact"><li>' + icon("globe") + web() + "</li><li>" + icon("phone") + tel(C.phone) + "</li>" +
-        "<li>" + icon("pin") + "<span>" + t(C.addressLine1) + "<br>" + t(C.addressLine2) + "</span></li></ul>" +
+        "<li>" + icon("pin") + "<span>" + addr("<br>") + "</span></li></ul>" +
       '<div class="cv-ids fit"><p class="ids"><span><small>UEI</small>' + t(C.uei) + "</span><span><small>CAGE</small>" + t(C.cage) + "</span></p>" +
-        '<p class="nk">' + t(C.socioEconomic) + " &middot; " + t(C.businessSize) + " under NAICS</p>" +
-        '<p class="codes">' + codes + "</p></div>" +
+        '<p class="nk">' + t(C.socioEconomic) + " &middot; " + t(C.businessSize) + "</p></div>" +
     "</article>";
 
   /* ---------------- Page 2: Cypher in focus ---------------- */
@@ -78,7 +77,7 @@
       '<div class="pbody fit"><div class="cols-focus">' +
         '<div class="col-main fit">' +
           head("doc", "Summary") +
-          '<p class="meta">Founded in ' + t(C.founded) + " &middot; Headquarters in " + t(C.addressLine2) + "</p>" +
+          '<p class="meta">Founded in ' + t(C.founded) + "</p>" +
           each(D.overview, function (p) { return '<p class="para">' + t(p) + "</p>"; }) +
           head("award", "Why Cypher") +
           '<ol class="diff">' + each(D.differentiators, function (d) {
@@ -118,12 +117,11 @@
               dataRow("Legal name", t(C.legalName)) + dataRow("UEI", t(C.uei)) + dataRow("CAGE", t(C.cage)) +
               dataRow("Founded", t(C.founded)) + dataRow("Size", t(C.businessSize)) + dataRow("Status", t(C.socioEconomic)) +
               dataRow("Clearance", t(C.facilityClearance)) +
-              dataRow("HQ", t(C.addressLine1) + "<br>" + t(C.addressLine2)) +
+              dataRow("Address", addr("<br>")) +
             "</dl></section>" +
-          "<section>" + head("hash", "NAICS codes") +
-            '<ul class="naics">' + each(D.naics, function (n) {
-              return "<li><b>" + t(n.code) + "</b><span>" + t(n.title) + "</span></li>";
-            }) + "</ul></section>" +
+          "<section>" + head("plane", t((D.aviation || {}).title || "Aviation Safety")) +
+            '<p class="para">' + t((D.aviation || {}).text) + "</p>" +
+            '<ul class="blist two">' + each((D.aviation || {}).items, li) + "</ul></section>" +
         "</div>" +
       "</div>" + foot(3) +
     "</article>";
@@ -187,13 +185,8 @@
       band(D.corporatePhoto, "r", "<h1>Corporate<br>capabilities</h1>", "short") +
       '<div class="pbody fit"><div class="cols-corp">' +
         '<div class="col-main fit">' +
-          '<section class="blk">' + bar("Prime contract vehicles") + '<ul class="vlist two">' + each(D.primeVehicles, veh) + "</ul></section>" +
-          '<section class="blk">' + bar("Subcontract vehicles") + '<ul class="vlist two">' + each(D.subVehicles, veh) + "</ul></section>" +
+          '<section class="blk">' + bar("Aviation Safety programs") + '<p class="para">' + t((D.aviation || {}).programsText) + '</p><ul class="blist two">' + each((D.aviation || {}).programs, li) + "</ul></section>" +
           '<section class="blk">' + bar("Customers") + '<ul class="blist two">' + each(D.customers, li) + "</ul></section>" +
-          '<section class="blk">' + bar("Certifications") + '<ul class="certs">' + each(D.certifications, function (c) {
-            if (typeof c === "string") c = { name: c, badge: "" };
-            return "<li>" + (c.badge ? '<span class="bdg"><img src="' + esc(c.badge) + '" alt=""></span>' : "") + "<span>" + t(c.name) + "</span></li>";
-          }) + "</ul></section>" +
         "</div>" +
         '<aside class="col-side fit">' +
           '<h2 class="sbox">Partners</h2>' +
@@ -204,7 +197,7 @@
               (p.note ? "<small>" + t(p.note) + "</small>" : "") + "</li>";
           }) + "</ul>" +
           '<h2 class="sbox">Contact us</h2>' +
-          '<div class="addr"><p>' + t(C.addressLine1) + "<br>" + t(C.addressLine2) + "</p><p>" + tel(C.phone) + "<br>" + web() + "</p></div>" +
+          '<div class="addr"><p>' + addr("<br>") + "</p><p>" + tel(C.phone) + "<br>" + web() + "</p></div>" +
           '<ul class="ppl">' + each(D.contacts, function (c) {
             return "<li><b>" + t(c.name) + "</b>" + (c.credentials ? "<span>" + t(c.credentials) + "</span>" : "") +
               '<span class="role">' + t(c.title) + "</span>" +
