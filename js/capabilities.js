@@ -31,7 +31,7 @@
   function head(ic, text, cls) {
     return '<h2 class="hd' + (cls ? " " + cls : "") + '"><span class="hi">' + icon(ic) + "</span><span>" + t(text) + "</span></h2>";
   }
-  // Dark bar heading (offerings, contract vehicles, customers).
+  // Dark bar heading (offerings, customers).
   function bar(text) { return '<h3 class="bar">' + t(text) + "</h3>"; }
 
   function foot(n) {

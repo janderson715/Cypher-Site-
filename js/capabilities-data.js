@@ -4,10 +4,10 @@
   capabilities.html reads this file and lays out the six printed pages:
     1  Cover
     2  Cypher in focus  (summary, why Cypher, key figures, core competencies)
-    3  Our goal  (adaptive services, company data, NAICS codes)
+    3  Our goal  (adaptive services, company data)
     4  Offerings in detail
     5  Products
-    6  Corporate capabilities  (contract vehicles, customers, certifications, partners, contact)
+    6  Corporate capabilities  (customers, partners, contact)
 
   To change the statement, change the text between the quotes below, save,
   and reload capabilities.html in a browser. Then rebuild the PDF
@@ -37,7 +37,7 @@ window.CYPHER_STATEMENT = {
     titleLine1: "Corporate",
     titleLine2: "Capabilities",
     // One line under the title. Words in **double stars** print green.
-    leadLine: "Cleared technical staff for **cyber operations, intelligence, software and systems engineering** across the DoD, the Intelligence Community and civilian agencies."
+    leadLine: "Technical staff for **cyber operations, intelligence, software and systems engineering** across the DoD, the Intelligence Community and civilian agencies."
   },
 
   // ---- Page 2: Cypher in focus ---------------------------------------------
@@ -108,7 +108,7 @@ window.CYPHER_STATEMENT = {
     website: "cypher-llc.com"
   },
 
-  // NAICS codes (code + official NAICS title), page 3. Codes also print on the cover.
+  // Aviation Safety programs
   aviation: {
     title: "Aviation Safety",
     text: "Cypher supports aviation safety programs for the Federal Aviation Administration, the Air Force and the Navy. We manage programs, build the software behind aviation safety data, analyze it, run operations and maintenance, and train the people who use it.",

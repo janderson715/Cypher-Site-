@@ -6,7 +6,7 @@ The Cypher, LLC website and capabilities statement. Plain static files: no build
 
 | File | What it is |
 | --- | --- |
-| `index.html` | Home page: slider, credentials, capabilities, customers, contract vehicles, products, how to buy, leadership |
+| `index.html` | Home page: slider, capabilities, customers, products, how to buy, leadership |
 | `services.html` | Capabilities: the six service areas in detail and the adaptive services |
 | `products.html` | C.O.S.M.O and G.H.O.S.T. (two separate products), with screenshots  |
 | `about.html` | Who we are, our goal, leadership, certifications, partners, customers |
@@ -97,10 +97,8 @@ Rules: keep every quote, comma and bracket; write `\"` for a double quote inside
 | `company.founded`, `businessSize`, `socioEconomic` | Company data | |
 | `company.facilityClearance` | Company data | Set to `""` to hide the row |
 | `company.addressLine1`, `addressLine2`, `phone`, `website` | Company data and footers | Phone becomes a tap-to-call link |
-| `naics` | "NAICS codes", page 1 | Each `{ code, title }` |
 | `contacts` | "Contact", page 1 | Each `{ name, credentials, title, email, phone }` |
 | `offerings` | "Offerings in detail", page 2, flows into three columns | Each `{ area, items: [...] }` |
-| `primeVehicles`, `subVehicles` | "Contract vehicles", page 2 | Each `{ name, note }`; `note` prints small at the right |
 | `customers` | "Customers", page 2 | List of names |
 | `partners` | "Partners", page 2 | Each `{ name, note }` (text only, no logos) |
 | `certifications` | "Certifications", page 2 | List |
@@ -118,7 +116,7 @@ It needs Node.js 18 or newer and Playwright, installed once with `npm install -g
 
 ## Contact form
 
-The form on `contact.html` is sent by [the site-forms Worker (Resend)](https://formsubmit.co), a free service that emails each message on. It is the only outside service the site talks to.
+The form on `contact.html` posts to the site-forms Cloudflare Worker, which emails each message through Resend. It is the only outside service the site talks to.
 
 **The receiving email address is set in one place: the `<form id="contact-form">` tag in `contact.html`.** It appears twice on that one tag; change both:
 
@@ -142,7 +140,7 @@ Other settings are hidden fields inside the form: `_subject` (the email subject 
 
 ## Facts and their sources
 
-Every fact on the site comes from Cypher's capabilities statement PDF (UEI, CAGE, NAICS codes, SDVOSB, founding year, address and phone, cleared onsite staff, services, adaptive services, offerings, contract vehicles, customers, partners, certifications, the goal quote, leadership and their contact details, the G.H.O.S.T. description and screen). C.O.S.M.O facts come from the C.O.S.M.O project README (name, tagline, workflow, local STIX 2.1 knowledge base, self-hosted on Mac, Windows, Linux or Docker). The Carahsoft reseller statement (C.O.S.M.O available through Carahsoft, the Master Government Aggregator®, and its reseller partners and contract vehicles) comes from Cypher's owner. G.H.O.S.T. is a separate product with nothing in common with C.O.S.M.O; no source says it is sold through Carahsoft, so the site does not say so. Keep the two apart in any new wording. NAICS titles are the official NAICS code titles. No Carahsoft contract number or schedule is claimed.
+Every fact on the site comes from Cypher's capabilities statement PDF (UEI, CAGE, SDVOSB, founding year, address and phone, services, adaptive services, offerings, customers, partners, certifications, the goal quote, leadership and their contact details, the G.H.O.S.T. description and screen). C.O.S.M.O facts come from the C.O.S.M.O project README (name, tagline, workflow, local STIX 2.1 knowledge base, self-hosted on Mac, Windows, Linux or Docker). The Carahsoft reseller statement (C.O.S.M.O available through Carahsoft, the Master Government Aggregator®, and its reseller partners and contract vehicles) comes from Cypher's owner. G.H.O.S.T. is a separate product with nothing in common with C.O.S.M.O; no source says it is sold through Carahsoft, so the site does not say so. Keep the two apart in any new wording. NAICS titles are the official NAICS code titles. No Carahsoft contract number or schedule is claimed.
 
 ## Placeholders to fill in
 
