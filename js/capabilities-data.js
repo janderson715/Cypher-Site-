@@ -90,7 +90,8 @@ window.CYPHER_STATEMENT = {
     { lead: "100% cleared technical staff,", text: "supporting customers onsite." },
     { lead: "Service-Disabled Veteran-Owned Small Business", text: "(SDVOSB), founded in 2009." },
     { lead: "Prime contractor", text: "on FAA eFAST and SeaPort NxG." },
-    { lead: "ISO 9001", text: "certified through DEKRA. CMMC compliant company." },
+    { lead: "ISO 9001", text: "certified through DEKRA." },
+    { lead: "CMMC compliant", text: "company." },
     { lead: "Our own software,", text: "two separate products: C.O.S.M.O (threat intelligence) and G.H.O.S.T. (on-premises AI)." }
   ],
 
@@ -171,13 +172,15 @@ window.CYPHER_STATEMENT = {
   // inside a laptop drawing. "logoOnDark" is used if the logo sits on a dark panel.
   products: [
     { name: "G.H.O.S.T.", logo: "assets/img/ghost-logo-dark.png", screenshot: "assets/img/ghost-screen.jpg",
-      text: "**Powerful AI that never leaves your building.** An on-premises AI platform: your team gets the speed of modern AI, and your data stays on hardware you control.",
+      text: "**A modular agentic AI platform** for national security and enterprise missions. Mission-specific agents run multi-step workflows on-premises, in a private cloud or fully disconnected.",
       points: [
-        "Private AI for sensitive work: data stays on your hardware",
-        "Specialist AI assistants set up for your mission",
-        "Answers questions, drafts documents, searches your files"
+        "Modular agents with one-click automated workflows",
+        "Runs on-premises, in private cloud or fully disconnected",
+        "Cites the source document for every output",
+        "More than 30 mission agents, from planning to network operations",
+        "Encryption and containerization meeting DoD and IC requirements"
       ],
-      linkText: "Ask Cypher about G.H.O.S.T.", link: "https://cypher-llc.com/contact.html" },
+      linkText: "ghostplatform.ai", link: "https://ghostplatform.ai" },
     { name: "C.O.S.M.O", logo: "assets/img/cosmo-horizontal.png", screenshot: "assets/img/cosmo-overview.jpg",
       text: "Cognitive Operations & Security Monitoring Orchestrator. The **AI-driven cyber intelligence platform**: its AI does the heavy lifting of a security team, from the first alert to the fix, and analysts approve.",
       points: [
@@ -220,8 +223,7 @@ window.CYPHER_STATEMENT = {
   // Certifications: "badge" is a picture in assets/img/ ("" for none).
   certifications: [
     { name: "ISO 9001 (DEKRA)", badge: "assets/img/badges/dekra-iso-9001.png" },
-    { name: "SDVOSB (CVE)", badge: "assets/img/badges/sdvosb-cve.png" },
-    { name: "CMMC compliant company", badge: "" }
+    { name: "SDVOSB (CVE)", badge: "assets/img/badges/sdvosb-cve.png" }
   ],
 
   // Partners (dark sidebar, page 6). "logo" is a picture in assets/img/;
