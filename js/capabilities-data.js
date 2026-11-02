@@ -36,8 +36,6 @@ window.CYPHER_STATEMENT = {
     photo: "assets/img/photos/world-map.jpg",
     titleLine1: "Corporate",
     titleLine2: "Capabilities",
-    // City, state and ZIP printed under the street line on the cover only.
-    addressLine2: "Ashburn, VA 20147",
     // One line under the title. Words in **double stars** print green.
     leadLine: "Technical staff for **cyber operations, intelligence, software and systems engineering** across the DoD, the Intelligence Community and civilian agencies."
   },
@@ -99,7 +97,7 @@ window.CYPHER_STATEMENT = {
     socioEconomic: "SDVOSB",
     facilityClearance: "",
     addressLine1: "44679 Endicott Dr, Suite 336",
-    addressLine2: "",
+    addressLine2: "Ashburn, VA 20147",
     phone: "(571) 206-1401",
     website: "cypher-llc.com"
   },
