@@ -926,3 +926,16 @@ figure { margin: 0; }
   .p-corp .blist li::before { top: 6.4pt; }
   .p-corp .para { font-size: 11pt; line-height: 1.5; margin: 12pt 0 14pt; }
 }
+
+/* ---------- G.H.O.S.T. platform capabilities (Products page) ---------- */
+.gcaps { margin-top: var(--s10); padding-top: var(--s8); border-top: 1px solid var(--line-dark); }
+.gcaps-head { max-width: 760px; margin-bottom: var(--s5); }
+.gcaps-head h3 { font-size: clamp(26px, 3.2vw, 36px); line-height: 1.15; margin: 8px 0 var(--s2); }
+.gcap-grid { display: grid; gap: var(--s3); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 700px) { .gcap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .gcap-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.gcap { padding: var(--s3); background: rgba(255,255,255,.04); border: 1px solid var(--line-dark); border-radius: 0; }
+.gcap .no { display: block; font-size: 12px; font-weight: 700; letter-spacing: .14em; color: var(--green-bright); }
+.gcap h3 { font-size: 21px; line-height: 1.2; margin: 6px 0 4px; }
+.gcap .gcap-tag { color: var(--green-bright); font-weight: 600; font-size: 15px; margin: 0 0 var(--s1); }
+.gcap p:last-child { font-size: 16px; line-height: 1.55; margin: 0; color: #d1d7dc; }
