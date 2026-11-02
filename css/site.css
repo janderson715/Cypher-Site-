@@ -939,3 +939,5 @@ figure { margin: 0; }
 .gcap h3 { font-size: 21px; line-height: 1.2; margin: 6px 0 4px; }
 .gcap .gcap-tag { color: var(--green-bright); font-weight: 600; font-size: 15px; margin: 0 0 var(--s1); }
 .gcap p:last-child { font-size: 16px; line-height: 1.55; margin: 0; color: #d1d7dc; }
+.logos li.tall img { height: 56px; }
+@media (max-width: 860px) { .logos li.tall img { height: 46px; } }
