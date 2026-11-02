@@ -206,7 +206,7 @@ window.CYPHER_STATEMENT = {
     { name: "Carahsoft", logo: "assets/img/partners/carahsoft.png",
       note: "" },
         { name: "Raytheon", logo: "assets/img/partners/raytheon.png", note: "" },
-    { name: "Palantir" }, { name: "UTRS" }, { name: "GovSmart" }, { name: "Four Inc." }, { name: "Product Knowledge" }
+    { name: "Palantir" }, { name: "UTRS" }, { name: "GovSmart", logo: "assets/img/partners/govsmart.svg", note: "" }, { name: "Four Inc.", logo: "assets/img/partners/four-inc.png", note: "" }, { name: "Product Knowledge" }
   ],
 
   // Contacts (dark sidebar, page 6)
