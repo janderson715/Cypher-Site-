@@ -8,7 +8,6 @@ The Cypher, LLC website and capabilities statement. Plain static files: no build
 | --- | --- |
 | `index.html` | Home page: slider, credentials, capabilities, customers, contract vehicles, products, how to buy, leadership |
 | `services.html` | Capabilities: the six service areas in detail and the adaptive services |
-| `contract-vehicles.html` | Prime and subcontract vehicles, company data, NAICS codes |
 | `products.html` | C.O.S.M.O and G.H.O.S.T. (two separate products), with screenshots  |
 | `about.html` | Who we are, our goal, leadership, certifications, partners, customers |
 | `contact.html` | Contact form and direct contacts |
@@ -151,7 +150,7 @@ These show highlighted in yellow so they cannot be missed. Search for `[EDIT:` t
 
 | Placeholder | Where |
 | --- | --- |
-| CMMC level | `js/capabilities-data.js` (`differentiators`, `certifications`), `about.html`, `contract-vehicles.html` |
+| CMMC level | `js/capabilities-data.js` (`differentiators`, `certifications`), `about.html` |
 | Facility clearance level (or hide the row) | `js/capabilities-data.js` (`company.facilityClearance`) |
 | Contract numbers for FAA eFAST and SeaPort NxG | `js/capabilities-data.js` (`primeVehicles`) |
 
