@@ -106,8 +106,6 @@ window.CYPHER_STATEMENT = {
   aviation: {
     title: "Aviation Safety",
     text: "Cypher supports aviation safety programs for the Federal Aviation Administration, the Air Force and the Navy. We manage programs, build the software behind aviation safety data, analyze it, run operations and maintenance, and train the people who use it.",
-    programsText: "For each program we provide program management, engineering, analytics, software development, operations and maintenance, and training.",
-    programs: ["Federal Aviation Administration (FAA)", "Air Force IRIS MFOQA", "Navy NAVAIR"],
     items: ["Program management", "Engineering", "Analytics", "Software development", "Operations and maintenance", "Training"]
   },
 

@@ -185,7 +185,6 @@
       band(D.corporatePhoto, "r", "<h1>Corporate<br>capabilities</h1>", "short") +
       '<div class="pbody fit"><div class="cols-corp">' +
         '<div class="col-main fit">' +
-          '<section class="blk">' + bar("Aviation Safety programs") + '<p class="para">' + t((D.aviation || {}).programsText) + '</p><ul class="blist two">' + each((D.aviation || {}).programs, li) + "</ul></section>" +
           '<section class="blk">' + bar("Customers") + '<ul class="blist two">' + each(D.customers, li) + "</ul></section>" +
         "</div>" +
         '<aside class="col-side fit">' +
