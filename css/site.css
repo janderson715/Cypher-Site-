@@ -966,15 +966,7 @@ figure { margin: 0; }
 .logo-band .marquee .logos img[src$="palantir.svg"] { max-width: 176px; max-height: 46px; }
 @media (max-width: 860px) { .logo-band .marquee .logos img[src$="palantir.svg"] { max-width: 138px; } }
 
-/* Home page "Who we are" key facts: open list, no lines or boxes */
-.glance { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s4); align-content: center; }
-.glance li { display: flex; align-items: center; gap: var(--s3); }
-.glance svg { width: 40px; height: 40px; flex: none; color: var(--green); stroke-width: 1.6; }
-.glance b { display: block; font-size: clamp(30px, 3.4vw, 42px); font-weight: 800; line-height: 1.05; color: var(--ink); letter-spacing: -0.01em; }
-.glance span { display: block; margin-top: 4px; font-size: 16px; color: var(--muted); }
-
-/* Our goal quote: opening mark top left, closing mark bottom right, text left-aligned */
-.quote { text-align: left; }
-.quote .mark-q { margin: 0 0 var(--s2); }
-.quote figcaption { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--s3); }
-.quote .mark-q.mark-close { margin: 0; height: 56px; line-height: .9; display: block; }
+/* Home page "Who we are" key facts: big open figures, no lines or boxes */
+.glance { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s8) var(--s5); align-content: center; }
+.glance span { display: block; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+.glance b { display: block; font-size: clamp(36px, 4.4vw, 60px); font-weight: 800; line-height: 1.02; color: var(--ink); letter-spacing: -0.02em; }
