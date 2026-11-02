@@ -913,11 +913,6 @@ figure { margin: 0; }
 
 /* Partners shown as names (no logo file yet) */
 .logos li.wm { font-size: 24px; font-weight: 700; color: #4a5157; letter-spacing: -0.01em; }
-/* Aviation Safety band on the home page */
-#aviation .svc-list { border-top-color: #e3e5e8; }
-#aviation .svc-list li { color: #1c2125; border-bottom-color: #e3e5e8; }
-#aviation .av-for { grid-column: 1 / -1; list-style: none; margin: 8px 0 0; padding: 28px 0 0; border-top: 1px solid #e3e5e8; display: flex; flex-wrap: wrap; gap: 12px 40px; }
-#aviation .av-for li { font-weight: 700; color: #4a5157; }
 
 /* Capabilities statement page 6: larger lists now that the vehicle blocks are gone */
 @media print, screen and (min-width: 880px) {
