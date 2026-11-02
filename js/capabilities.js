@@ -62,7 +62,7 @@
         "<h1><span>" + t(cv.titleLine1) + "</span><span>" + t(cv.titleLine2) + "</span></h1>" +
         (cv.leadLine ? '<p class="cv-lead">' + t(cv.leadLine) + "</p>" : "") + "</div>" +
       '<ul class="cv-contact"><li>' + icon("globe") + web() + "</li><li>" + icon("phone") + tel(C.phone) + "</li>" +
-        "<li>" + icon("pin") + "<span>" + addr("<br>") + "</span></li></ul>" +
+        "<li>" + icon("pin") + "<span>" + [C.addressLine1, cv.addressLine2 || C.addressLine2].filter(Boolean).map(t).join("<br>") + "</span></li></ul>" +
       '<div class="cv-ids fit"><p class="ids"><span><small>UEI</small>' + t(C.uei) + "</span><span><small>CAGE</small>" + t(C.cage) + "</span></p>" +
         '<p class="nk">' + t(C.socioEconomic) + " &middot; " + t(C.businessSize) + "</p></div>" +
     "</article>";
