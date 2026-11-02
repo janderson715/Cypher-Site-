@@ -159,7 +159,7 @@ window.CYPHER_STATEMENT = {
   // "logo" and "screenshot" are files in assets/img/. The screenshot is shown
   // inside a laptop drawing. "logoOnDark" is used if the logo sits on a dark panel.
   products: [
-    { name: "G.H.O.S.T.", logo: "assets/img/ghost-logo-dark.png", screenshot: "assets/img/mock/ghost-home-macbook.webp?v=i",
+    { name: "G.H.O.S.T.", logo: "assets/img/ghost-logo-dark.png", screenshot: "assets/img/mock/ghost-home-macbook.webp?v=j",
       text: "**A modular agentic AI platform** for national security and enterprise missions. Mission-specific agents run multi-step workflows on-premises, in a private cloud or fully disconnected.",
       points: [
         "Modular agents with one-click automated workflows",
