@@ -965,3 +965,11 @@ figure { margin: 0; }
 .glance { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s8) var(--s5); align-content: center; }
 .glance span { display: block; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
 .glance b { display: block; font-size: clamp(36px, 4.4vw, 60px); font-weight: 800; line-height: 1.02; color: var(--ink); letter-spacing: -0.02em; }
+
+/* Platform capabilities: open layout (no boxes), on both the dark G.H.O.S.T. and the light C.O.S.M.O sections */
+.gcap { padding: 0; background: none; border: 0; }
+.gcaps.on-light { border-top-color: var(--line); }
+.gcaps.on-light .gcaps-head h3, .gcaps.on-light .gcap h3 { color: var(--ink); }
+.gcaps.on-light .gcap .gcap-tag { color: var(--green); }
+.gcaps.on-light .gcap p:last-child { color: var(--body); }
+.gcaps.on-light .gcap .no { color: var(--green); }
