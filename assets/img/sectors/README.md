@@ -15,3 +15,6 @@ Start every prompt with this style line:
 | systems-engineering.jpg | "A clean government data center aisle with server racks, fiber cables with green lights, perspective down the aisle." |
 | enterprise-it.jpg | "An IT program team in a dark modern conference room reviewing a large wall display of system dashboards and timelines, silhouettes only." |
 | aviation-safety.jpg | "A commercial airliner at dusk on a runway seen from the control tower, radar scope with green sweep in the foreground." |
+
+
+Note (Ray, 2026-11-03): systems-engineering.jpg is now the conference room with the bar chart wall display. enterprise-it.jpg is missing on purpose: the Enterprise IT card shows the server-corridor fallback until a new picture is saved here with that exact name. Satellite = national-security-intelligence.jpg, keyboard = software-engineering.jpg.
