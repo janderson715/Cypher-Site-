@@ -284,6 +284,7 @@ a.card:hover .art .ico { transform: translateY(-4px); }
 @media (min-width: 1100px) { .product { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--s10); } .product.flip { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); } .product.flip .copy { order: 2; } }
 .product + .product { margin-top: var(--s12); }
 .product .mark { height: 54px; width: auto; margin-bottom: var(--s3); }
+.product .mark[src*="cosmo"] { height: 84px; }
 .checks { margin: var(--s3) 0 var(--s4); display: grid; gap: 10px; }
 .checks li { display: flex; gap: 12px; align-items: flex-start; }
 .checks svg { width: 20px; height: 20px; color: var(--green); flex: none; margin-top: 4px; }
