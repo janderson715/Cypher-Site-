@@ -205,9 +205,9 @@ html:not(.js) .slider-ui { display: none; }
 .monitor .neck { position: absolute; left: 50%; bottom: 3%; width: 12%; height: 13%; transform: translateX(-50%); background: linear-gradient(90deg, #8a9095, #dfe2e4 50%, #8a9095); clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%); }
 .monitor .foot { position: absolute; left: 50%; bottom: 0; width: 32%; height: 3.4%; transform: translateX(-50%); border-radius: 0; background: linear-gradient(180deg, #eef0f1, #9aa0a5); }
 .monitor::after { content: ""; position: absolute; left: 20%; right: 20%; bottom: -2%; height: 6%; background: radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,.45), transparent 72%); filter: blur(5px); z-index: -1; }
-.duo { position: relative; padding-bottom: 6%; }
+.duo { position: relative; padding-bottom: 12%; }
 .duo .monitor { width: 84%; margin: 0 0 0 auto; }
-.duo .laptop { position: absolute; left: 0; bottom: 0; width: 58%; z-index: 2; }
+.duo .laptop { position: absolute; left: 0; bottom: 0; width: 50%; z-index: 2; }
 
 /* ---------- Credentials band ---------- */
 .creds { position: relative; z-index: 2; background: #fff; border-bottom: 1px solid var(--line); }
