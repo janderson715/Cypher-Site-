@@ -1036,3 +1036,6 @@ figure { margin: 0; }
 .partner-strip li.tall img { max-height: 60px; }
 @media (max-width: 860px) { .partner-strip { grid-template-columns: repeat(2, 1fr); gap: 8px 20px; } }
 .partner-strip img[alt="Palantir"] { width: 132px; height: auto; max-height: none; }
+
+/* A phone number never breaks across two lines */
+.nb, a[href^="tel:"] { white-space: nowrap; }
