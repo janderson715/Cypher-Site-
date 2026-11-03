@@ -1033,3 +1033,15 @@ figure { margin: 0; }
 
 /* A phone number never breaks across two lines */
 .nb, a[href^="tel:"] { white-space: nowrap; }
+
+/* Credentials band, compact: icon beside the number so "Who we are" sits higher */
+@media (min-width: 641px) {
+  .creds ul { padding: 16px 0; gap: 8px 0; align-items: center; }
+  .creds ul li:nth-child(n) { display: flex; align-items: center; gap: 12px; text-align: left; padding: 0 clamp(18px, 2.4vw, 36px); }
+  .creds ul li + li::before { top: 50%; margin-top: -4px; }
+  .creds svg { margin: 0; width: 30px; height: 30px; flex: none; }
+  .creds b { font-size: clamp(18px, 1rem + .4vw, 22px); }
+  .creds span { margin-top: 2px; font-size: 11.5px; }
+}
+@media (max-width: 640px) { .creds ul { padding: 20px 0 16px; } .creds svg { width: 30px; height: 30px; margin-bottom: 8px; } }
+.creds + .section { padding-top: clamp(44px, 5vw, 64px); }
