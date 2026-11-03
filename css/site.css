@@ -1045,3 +1045,4 @@ figure { margin: 0; }
 }
 @media (max-width: 640px) { .creds ul { padding: 20px 0 16px; } .creds svg { width: 30px; height: 30px; margin-bottom: 8px; } }
 .creds + .section { padding-top: clamp(44px, 5vw, 64px); }
+.creds { border-bottom: 0; box-shadow: 0 1px 0 var(--line); }
