@@ -728,12 +728,13 @@ figure { margin: 0; }
 }
 
 /* Ray 2026-11-02: real images, no rounded corners, agencies band, partner logo strip */
-.cards .card:nth-child(1) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/cyber-operations.jpg") 70% 50%/cover, url("../assets/img/photos/network-constellation.jpg") center/cover; }
-.cards .card:nth-child(2) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/national-security-intelligence.jpg") 70% 50%/cover, url("../assets/img/photos/world-map-grid.jpg") center/cover; }
-.cards .card:nth-child(3) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/software-engineering.jpg") 70% 50%/cover, url("../assets/img/photos/green-data-streams.jpg") center/cover; }
-.cards .card:nth-child(4) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/systems-engineering.jpg") 70% 50%/cover, url("../assets/img/photos/circuit-board.jpg") center/cover; }
-.cards .card:nth-child(5) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/enterprise-it.jpg") 70% 50%/cover, url("../assets/img/photos/server-corridor.jpg") center/cover; }
-.cards .card:nth-child(6) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/aviation-safety.jpg") 70% 50%/cover, url("../assets/img/photos/green-city-wireframe.jpg") center/cover; }
+/* order matches the cards: Aviation, Cyber, National Security, Software, Systems, Enterprise IT */
+.cards .card:nth-child(1) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/aviation-safety.jpg") 70% 50%/cover, url("../assets/img/photos/green-city-wireframe.jpg") center/cover; }
+.cards .card:nth-child(2) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/cyber-operations.jpg") 70% 50%/cover, url("../assets/img/photos/network-constellation.jpg") center/cover; }
+.cards .card:nth-child(3) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/national-security-intelligence.jpg") 70% 50%/cover, url("../assets/img/photos/world-map-grid.jpg") center/cover; }
+.cards .card:nth-child(4) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/software-engineering.jpg") 70% 50%/cover, url("../assets/img/photos/green-data-streams.jpg") center/cover; }
+.cards .card:nth-child(5) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/systems-engineering.jpg") 70% 50%/cover, url("../assets/img/photos/circuit-board.jpg") center/cover; }
+.cards .card:nth-child(6) .art { background: linear-gradient(180deg, rgba(20,22,26,0), rgba(20,22,26,.55)), url("../assets/img/sectors/enterprise-it.jpg") 70% 50%/cover, url("../assets/img/photos/server-corridor.jpg") center/cover; }
 .cards .card .art .fill { opacity: .35; }
 .cards .card .art .ico { filter: drop-shadow(0 2px 8px rgba(0,0,0,.6)); }
 .agencies { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 40px; border-top: 3px solid var(--green, #218426); background: linear-gradient(180deg, rgba(14,16,20,.92), rgba(14,16,20,.96)), url("../assets/img/photos/world-map-grid.jpg") center/cover; }
