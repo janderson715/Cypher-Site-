@@ -17,4 +17,4 @@ Start every prompt with this style line:
 | aviation-safety.jpg | "A commercial airliner at dusk on a runway seen from the control tower, radar scope with green sweep in the foreground." |
 
 
-Note (Ray, 2026-11-03): systems-engineering.jpg is now the conference room with the bar chart wall display. enterprise-it.jpg is missing on purpose: the Enterprise IT card shows the server-corridor fallback until a new picture is saved here with that exact name. Satellite = national-security-intelligence.jpg, keyboard = software-engineering.jpg.
+Note (Ray, 2026-11-03): each picture matches its card. Systems engineering = data center aisle (Ray's own photo), Enterprise IT = conference room with the bar chart wall, National security = satellite, Software = keyboard. The cards in css/site.css are matched in card order (Aviation, Cyber, National, Software, Systems, Enterprise IT).
