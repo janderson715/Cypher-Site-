@@ -1051,3 +1051,6 @@ figure { margin: 0; }
 .creds { border-bottom: 0; box-shadow: 0 1px 0 var(--line); }
 @media (min-width: 641px) { .creds ul { padding: 30px 0; } }
 .creds + .section { padding-top: clamp(32px, 3.5vw, 48px); }
+
+/* Phones: the pictures do not slide in from the side (they overhung the screen edge before they appeared) */
+@media (max-width: 860px) { .motion .tilt-in, .motion .tilt-in.in { transform: none; } }
