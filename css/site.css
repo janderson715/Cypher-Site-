@@ -1054,3 +1054,10 @@ figure { margin: 0; }
 
 /* Phones: the pictures do not slide in from the side (they overhung the screen edge before they appeared) */
 @media (max-width: 860px) { .motion .tilt-in, .motion .tilt-in.in { transform: none; } }
+
+/* Aviation Safety: prime contract summaries under the capability list */
+.sv-contracts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 26px; }
+.sv-contract { padding: 22px 24px; background: var(--paper-2); border-top: 3px solid var(--green); }
+.sv-contract h3 { margin: 0 0 8px; font-size: 1.15rem; line-height: 1.3; color: var(--ink); }
+.sv-contract p { margin: 0; color: var(--body); line-height: 1.6; }
+@media (max-width: 860px) { .sv-contracts { grid-template-columns: 1fr; } }
