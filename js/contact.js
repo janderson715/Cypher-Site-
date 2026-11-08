@@ -10,6 +10,10 @@
   var email = (form.getAttribute("data-email") || "").trim();
   if (email) form.action = "https://site-forms.janderson-6f5.workers.dev";
 
+  // When the page finished rendering. The Worker rejects anything sent in under 3 seconds.
+  var stamp = form.querySelector('[name="_t"]');
+  if (stamp) stamp.value = String(Date.now());
+
   function thanks() {
     form.innerHTML = '<div class="sent" tabindex="-1"><h2 style="font-size:1.5rem;margin-bottom:.4rem">Thank you. Your message was sent.</h2>' +
       "<p>We will reply by email. For anything urgent, call (571) 206-1401.</p></div>";

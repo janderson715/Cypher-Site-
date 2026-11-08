@@ -9,7 +9,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/barlow-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/site.css?v=20261109t">
+<link rel="stylesheet" href="css/site.css?v=20261109u">
 <script>(function(d){d.className+=" js";try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&"IntersectionObserver" in window)d.className+=" motion"}catch(e){}})(document.documentElement);</script>
 </head>
 <body>
@@ -62,18 +62,32 @@
           <input type="hidden" name="_subject" value="Website inquiry from cypher-llc.com">
           <input type="hidden" name="_next" value="https://cypher-llc.com/contact.html?sent=1">
           <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_t" value="">
           <div class="honey" aria-hidden="true"><label for="f-honey">Leave this empty</label><input type="text" id="f-honey" name="_honey" tabindex="-1" autocomplete="off"></div>
           <div class="row2">
             <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-            <div class="field"><label for="f-org">Organization <span class="opt">(optional)</span></label><input id="f-org" name="organization" type="text" autocomplete="organization"></div>
+            <div class="field"><label for="f-org">Organization</label><input id="f-org" name="organization" type="text" autocomplete="organization" required></div>
           </div>
           <div class="row2">
-            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
             <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
           </div>
-          <div class="field"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" rows="7" required></textarea></div>
+          <div class="field"><label for="f-topic">What is this about?</label>
+            <select id="f-topic" name="topic" required>
+              <option value="" selected disabled>Please choose&hellip;</option>
+              <option>Products and demos</option>
+              <option>Pricing</option>
+              <option>Partnership</option>
+              <option>Support</option>
+              <option>Careers</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" rows="7" minlength="20" required></textarea></div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAF5C0E8AoALWH5Gg" data-theme="auto"></div>
           <div><button class="btn btn-primary" type="submit">Send message <svg class="" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button></div>
           <p class="status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="alt-contact">Prefer email? Write to us at the address shown here.</p>
         </form>
       </div>
       <aside class="reveal" style="--i:1">
@@ -141,7 +155,8 @@
     <div class="bottom"><span>&copy; 2026 Cypher, LLC. All rights reserved.</span><span>C.O.S.M.O and G.H.O.S.T. are separate products of Cypher, LLC.</span></div>
   </div>
 </footer>
-<script src="js/contact.js?v=20261102k"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="js/contact.js?v=20261108a"></script>
 <script src="js/site.js?v=20261102k"></script>
 </body>
 </html>
