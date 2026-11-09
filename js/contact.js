@@ -37,8 +37,11 @@
         throw new Error((res.j && res.j.message) || "not sent");
       })
       .catch(function () {
+        // The Turnstile token is single-use and expires after about 5 minutes. Without this
+        // reset a second attempt resends the spent token and can never succeed.
+        try { if (window.turnstile) window.turnstile.reset(); } catch (err) {}
         btn.disabled = false; status.className = "status err";
-        status.textContent = "Sorry, the message did not send. Please try again, or email " + email + " directly.";
+        status.textContent = "Sorry, the message did not send. Please tick the box again and retry, or email " + email + " directly.";
       });
   });
 })();
