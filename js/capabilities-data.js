@@ -169,7 +169,7 @@ window.CYPHER_STATEMENT = {
         "Encryption and containerization meeting DoD and IC requirements"
       ],
       linkText: "ghostplatform.ai", link: "https://ghostplatform.ai" },
-    { name: "C.O.S.M.O", logo: "assets/img/cosmo-horizontal.png", screenshot: "assets/img/cosmo-overview.jpg",
+    { name: "C.O.S.M.O", logo: "assets/img/cosmo-horizontal.png", screenshot: "assets/img/cosmo-overview.jpg?v=20261110a",
       text: "Cognitive Operations & Security Monitoring Orchestrator. The **AI-driven cyber intelligence platform**: its AI does the heavy lifting of a security team, from the first alert to the fix, and analysts approve.",
       points: [
         "Auto-triages the whole alert queue: real, closed or needs checking",
